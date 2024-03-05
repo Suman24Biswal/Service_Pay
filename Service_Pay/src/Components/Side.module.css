@@ -1,0 +1,13 @@
+.side{
+    width: 120px;
+    border-radius: 12px;
+    height: 650px;
+    background-image: url("/Rectangle 197 (1).png");
+    display: grid;
+    grid-template-rows: 30px 70px 70px 70px 70px;
+    row-gap: 15px;
+    background-size: cover;
+    }
+    .d{
+        margin: 2px 0 35px 30px;
+    }

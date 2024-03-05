@@ -1,0 +1,123 @@
+.t{
+    background-color:  rgba(255, 255, 255, 1);
+    display: grid;
+    grid-template-rows: 100px 530px;
+    width: 1340px;
+    height: 650px;
+    font-family: "Manrope", sans-serif;
+    border-radius: 12px;
+    border: 1px solid black;
+
+}
+.card{
+    margin: 30px 0 0 90px;
+    font-size: 30px;
+    font-weight: 300;
+}
+.box{
+    display: grid;
+    width: 1020px;
+    margin: 0 25px 0 25px;
+    font-size: 18px;
+    font-weight: 400;
+    grid-template-rows: 100px 100px 200px 100px ;
+   
+}
+.select{
+    margin: 50px 0 0 100px;
+    width: 310px;
+    border-radius: 15px;
+    /* border: 2px solid black; */
+}
+.select2{
+    margin: 50px 0 0 140px;
+    width: 310px;
+    border-radius: 15px;
+    /* border: 2px solid black; */
+}
+.col{
+    display: grid;
+    grid-template-columns: 330px 300px;
+    column-gap: 20px;
+    
+}
+.btn{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    /* margin: 60px 0 0 95px; */
+    
+}
+.t{
+    background-color:  rgba(255, 255, 255, 1);
+    display: grid;
+    grid-template-rows: 100px 530px;
+    width: 1340px;
+    height: 650px;
+    font-family: "Manrope", sans-serif;
+    border-radius: 12px;
+    border: 1px solid black;
+
+}
+.box{
+    display: grid;
+    width: 1020px;
+    margin: 0 25px 0 25px;
+    font-size: 18px;
+    font-weight: 400;
+    grid-template-rows: 100px 100px 200px 100px ;
+   
+}
+.select{
+    margin: 50px 0 0 100px;
+    width: 310px;
+    border-radius: 15px;
+    /* border: 2px solid black; */
+}
+.select2{
+    margin: 50px 0 0 100px;
+    width: 310px;
+    border-radius: 15px;
+    /* border: 2px solid black; */
+}
+.col{
+    display: grid;
+    grid-template-columns: 300px 300px;
+}
+.btn{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    margin: 60px 0 0 95px;
+}
+@media (min-width: 600px) and (max-width: 800px){
+    .t{
+        background-color:  rgba(255, 255, 255, 1);
+        display: grid;
+        grid-template-rows: 40px 430px;
+        width: 590px;
+        height: 650px;
+        font-family: "Manrope", sans-serif;
+        border-radius: 12px;
+        border: 1px solid black;
+    
+    }
+    .box{
+        display: grid;
+        width: 520px;
+        margin: 0 25px 0 5px;
+        font-size: 18px;
+        font-weight: 400;
+        grid-template-rows: 50px 50 150px 50 ;
+         height: 350px;  
+    }
+    .col{
+        display: grid;
+       grid-template-columns: 250px;
+        
+    }
+    .btn{
+        display: grid;
+        grid-template-columns: 100px 100px;
+        margin: 180px 0 0 95px;
+    }
+    
+}

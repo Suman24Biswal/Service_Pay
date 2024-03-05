@@ -1,0 +1,92 @@
+.t{
+    background-color:  rgba(255, 255, 255, 1);
+    display: grid;
+    grid-template-rows: 100px 500px;
+    width: 1340px;
+    height: 650px;
+    font-family: "Manrope", sans-serif;
+    border-radius: 12px;
+    border: 1px solid black;
+
+}
+.box{
+    display: grid;
+    grid-template-rows: 160px 160px 160px;
+    row-gap: 20px;
+    width: 1020px;
+    margin: 0 25px 0 25px;
+    font-size: 18px;
+    font-weight: 400;
+   
+}
+
+.all{
+    background-color: rgba(251, 251, 251, 1);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px gray;
+}
+.Nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 35px;
+    font-weight: 600;
+}
+.f{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    background-color:  rgba(251, 251, 251, 1);
+    margin: 15px 0 0 15px;
+   
+}
+.s{
+    display: grid;
+    grid-template-columns: 140px 140px 140px 140px 140px 140px 140px 140px ;
+    background-color:  rgba(251, 251, 251, 1);
+    margin: 15px 0 0 15px;
+}
+.l{
+    display: grid;
+    grid-template-columns: 140px 140px;
+    margin: 15px 0 0 15px;
+}
+
+  @media (min-width: 600px) and (max-width: 800px) {
+    .t{
+        background-color:  rgba(255, 255, 255, 1);
+        
+        display: grid;
+        grid-template-rows: 100px 500px;
+        width: 900px;
+        height: 800px;
+        font-family: "Manrope", sans-serif;
+        border-radius: 12px;
+        border: 1px solid black;
+    
+    }
+    .box{
+        display: grid;
+        grid-template-rows: 160px 310px ;
+        row-gap: 20px;
+        width: 600px;
+        margin: 0 25px 0 25px;
+        font-size: 14px;
+        font-weight: 400;
+       
+    }
+    .f{
+        display: grid;
+        grid-template-columns: 150px 150px 150px;
+        background-color:  rgba(251, 251, 251, 1);
+        margin: 15px 0 0 15px;
+        font-size: 12px;
+    }
+    .s{
+        display: grid;
+        grid-template-columns: 140px 140px 140px 140px 140px  ;
+        grid-template-rows:130px 130px ;
+        background-color:  rgba(251, 251, 251, 1);
+        margin: 15px 0 0 15px;
+    }
+  }
+  

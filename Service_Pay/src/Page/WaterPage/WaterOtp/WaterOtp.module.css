@@ -1,0 +1,46 @@
+.t{
+    background-color:  rgba(255, 255, 255, 1);
+    display: grid;
+    grid-template-rows: 100px 530px;
+    width: 1340px;
+    height: 650px;
+    font-family: "Manrope", sans-serif;
+    border-radius: 12px;
+    border: 1px solid black;
+
+}
+.box{
+    display: grid;
+    width: 1020px;
+    margin: 0 25px 0 25px;
+    font-size: 18px;
+    font-weight: 400;
+    grid-template-rows: 100px 100px 300px  ;
+}
+.card{
+    margin: 0 0 0 90px;
+}
+.col{
+    margin: 70px 0 10px 330px;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    height: 300px;
+    border: 2px solid black;
+    width: 350px;
+    border-radius: 13px;
+}
+.btn{
+    margin: 40px 0 0 50px;
+}
+.otp{
+    margin: 20px 0 0 40px;
+}
+.card{
+    margin: 30px 0 0 90px;
+    font-size: 30px;
+    font-weight: 300;
+}
+.timer{
+    margin: 30px 0 0 100px;
+    font-size: 14px;
+}

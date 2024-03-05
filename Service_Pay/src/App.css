@@ -1,0 +1,29 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+
+.body{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  
+}
+.grid{
+  display: grid;
+  grid-template-columns: 100px 330px;
+  column-gap: 2rem;
+}
+.Route{
+  margin: 20px 0 0 0 ;
+}
+/* @media (min-width: 601px) and (max-width: 900px) {
+  .body{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    
+  }
+} */

@@ -1,0 +1,99 @@
+.t{
+    background-color:  rgba(255, 255, 255, 1);
+    display: grid;
+    grid-template-rows: 100px 530px;
+    width: 1340px;
+    height: 650px;
+    font-family: "Manrope", sans-serif;
+    border-radius: 12px;
+    border: 1px solid black;
+
+}
+.box{
+    display: grid;
+    width: 1020px;
+    margin: 0 25px 0 25px;
+    font-size: 18px;
+    font-weight: 400;
+    grid-template-rows: 100px  410px  ;
+    
+}
+
+.col{
+    margin: 20px 0 0 290px;
+    display: grid;
+    grid-template-rows: 100px 10px 280px  ;
+    width: 470px;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+.btn{
+    margin: 50px 0 0 390px;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    column-gap: 10px;
+    height: 45px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.trans{
+   padding:1.7rem 0 0  2.5rem;
+    font-size: 27px;
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: 320px 50px;
+}
+.rows{
+    display: grid;
+    width: 420px;
+    margin: 0 25px 0 25px;
+    grid-template-columns: 210px 210px;
+    column-gap: 20px;
+}
+.col1{
+    font-size: 18px;
+    font-weight: 400px;
+}
+@media (min-width: 600px) and (max-width: 800px) {
+    .t{
+        background-color:  rgba(255, 255, 255, 1);
+        display: grid;
+        grid-template-rows: 100px 530px;
+        width: 700px;
+        height: 650px;
+        font-family: "Manrope", sans-serif;
+        border-radius: 12px;
+        border: 1px solid black;
+    
+    }
+    .col{
+        margin: 20px 0 0 190px;
+        display: grid;
+        grid-template-rows: 100px 10px 280px  ;
+        width: 300px;
+        border-radius: 12px;
+        border: 2px solid black;
+    }
+    .col1{
+        font-size: 12px;
+        font-weight: 200;
+    }
+    .trans{
+        padding:1.7rem 0 0  1.5rem;
+         font-size: 16px;
+         font-weight: 300;
+         display: grid;
+         grid-template-columns: 220px 30px;
+     }
+     .btn{
+        margin: 50px 0 0 220px;
+        display: grid;
+        grid-template-columns: 100px 100px;
+        column-gap: 5px;
+        height: 35px;
+        border-radius: 15px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
