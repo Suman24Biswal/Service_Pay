@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink , Link} from 'react-router-dom'
 import styles from './Transfer.module.css'
 
 function Transfer() {
@@ -19,11 +19,17 @@ function Transfer() {
             <div style={{margin:'5px 0 0 15px',fontSize:'16px'}}>CardTop Up</div>
             </div>
             <div>
+            <NavLink to={'/AccountTransfer'}>
             <img  src="/Careda.png" alt="" />
+            </NavLink>
+          
             <div style={{margin:'5px 0 0 0',fontSize:'16px'}}>Account-Transfer</div>
             </div>
             <div>
+            <NavLink to={'/AccountTransfer'}>
             <img src="/CardT.png" alt="" />
+            </NavLink>
+           
             <div style={{margin:'5px 0 0 0',fontSize:'16px'}}>Card-Transfer</div>
             </div>
             </div>
@@ -36,9 +42,9 @@ function Transfer() {
                 <div style={{margin:'5px 0 0 15px',fontSize:'16px'}}>Mobile</div>
             </div>
             <div>
-               <NavLink to={'/TvPaySelect'}>
+               <Link to={'/TvPaySelect'}>
                <img src="/Tv.png" alt="" />
-               </NavLink>
+               </Link>
                 <div style={{margin:'5px 0 0 15px',fontSize:'16px'}}>Tv</div>
             </div>
             <div>
@@ -46,13 +52,15 @@ function Transfer() {
                 <div style={{margin:'5px 0 0 15px',fontSize:'16px'}}>Electricity</div>
             </div>
             <div>
-               <NavLink to={'/PayMethod'}>
+               <Link to={'/PayMethod'}>
                <img src="/Wt.png" alt="" />
-               </NavLink>
+               </Link>
                 <div style={{margin:'5px 0 0 15px',fontSize:'16px'}}>Water</div>
             </div>
             <div>
-                <img src="/Gas.png" alt="" />
+            <NavLink to={'/PayMethod'}>
+            <img src="/Gas.png" alt="" />
+               </NavLink>
                 <div style={{margin:'5px 0 0 15px',fontSize:'16px'}}>Gas</div>
             </div>
             <div>
@@ -60,7 +68,10 @@ function Transfer() {
                 <div style={{margin:'5px 0 0 15px',fontSize:'16px'}}>Phone</div>
             </div>
             <div>
+                <Link to={'/BroadbandOperator'}>
                 <img src="/Broad.png" alt="" />
+                </Link>
+                
                 <div style={{margin:'5px 0 0 15px',fontSize:'16px'}}>Broadband</div>
             </div>
             <div style={{margin:'15px 0 0 15px'}}>
@@ -76,7 +87,7 @@ function Transfer() {
             <div className={styles.l}>
                 <div >
                    <NavLink to={'/TutionfeeSelect'}>
-                   <img src="/tution.png" alt="" />
+                   <img src="/tuition.png" alt="" />
                    </NavLink>
                     <div style={{margin:'5px 0 0 15px',fontSize:'16px'}}>Tuition-fee</div>
                 </div>

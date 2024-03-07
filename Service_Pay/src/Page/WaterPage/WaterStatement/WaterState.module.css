@@ -80,12 +80,12 @@
         display: grid;
        grid-template-columns: 250px;
         width: 400px;
-        height: 350px;
+        height: 300px;
     }
     .btn{
         display: grid;
         grid-template-columns: 100px 100px;
-        margin: 210px 0 0 150px;
+        margin: 180px 0 0 180px;
     }
     .div{
         height: 20px ;

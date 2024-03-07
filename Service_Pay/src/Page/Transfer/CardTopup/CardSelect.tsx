@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import styles from './TutionSelect.module.css'
+import styles from './Cards.module.css';
 import Select, { ValueType } from 'react-select'; // Importing ValueType for defining selected type
 import { useState } from 'react';
 
@@ -9,9 +9,10 @@ interface OptionType {
   label: string;
 }
 
-function TutionfeeSelect() {
+function CardSelect() {
   const [selected, setSelected] = useState<OptionType | null>(null);
   const [atm, setAtm] = useState<OptionType | null>(null);
+  const [clicked, setClicked] = useState(false);
 
 
   const options: OptionType[] = [
@@ -33,6 +34,7 @@ function TutionfeeSelect() {
 
   const statement = () => {
     route("/Statement");
+    setClicked(true);
   };
 
   return (
@@ -44,15 +46,8 @@ function TutionfeeSelect() {
           <div style={{ fontSize: '13px', fontWeight: '300', margin: '10px 0 0 90px' }}>transfer/Fund Transfer/<span style={{color:'green'}}>Card Top up</span></div>
         </div>
         <div className={styles.col}>
-          <div>
-            <input type="text" className={styles.input1} />
-          </div>
-          <div>
-            <input type="text" className={styles.input1} />
-          </div>
-        
-          <div>
-          <Select
+          
+            <Select
             className={styles.select}
               options={options}
               value={selected}
@@ -60,10 +55,8 @@ function TutionfeeSelect() {
               onChange={(value: ValueType<OptionType>) => setSelected(value as OptionType)} 
               isSearchable
             />
-          </div>
           
-            <div>
-            <Select
+          <Select
             className={styles.select2}
               options={optionsAtm}
               value={atm}
@@ -71,28 +64,18 @@ function TutionfeeSelect() {
               onChange={(value: ValueType<OptionType>) => setAtm(value as OptionType)} 
               isSearchable
             />
-            </div>
-            
-             <div>
-             <Select
-            className={styles.select2}
-              options={optionsAtm}
-              value={atm}
-              placeholder="Select" 
-              onChange={(value: ValueType<OptionType>) => setAtm(value as OptionType)} 
-              isSearchable
-            />
-             </div>
-
-          <div><input placeholder='Enter Amount' className={styles.input1} /></div>
-         
+          <input placeholder='Enter Amount' className={styles.input1} />
+          <input placeholder='Remarks' className={styles.input2} />
         </div>
         <div className={styles.btn}>
-          <button onClick={transfer} style={{ height: '35px', width: '120px', borderRadius: '15px' }}>Cancel</button>
-          <button onClick={statement} style={{ height: '35px', width: '120px', borderRadius: '15px', margin: '0 0 0 30px' }}>Proceed</button>
+          <div><button onClick={transfer}  className={clicked ? 'clicked' : ''}>Cancel</button></div>
+          
+         <div>  <button onClick={statement}  >Proceed</button></div>
+         
         </div>
       </div>
     </div>
   );
 }
-export default TutionfeeSelect;
+
+export default CardSelect;

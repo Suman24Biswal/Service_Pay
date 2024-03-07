@@ -1,4 +1,4 @@
-.t{
+.box1{
     background-color:  rgba(255, 255, 255, 1);
     display: grid;
     grid-template-rows: 100px 530px;
@@ -9,14 +9,19 @@
     border: 1px solid black;
 
 }
-.box{
+.box2{
     display: grid;
     width: 1020px;
     margin: 0 25px 0 25px;
     font-size: 18px;
     font-weight: 400;
-    grid-template-rows: 100px 100px 300px 100px ;
+    grid-template-rows: 100px 100px 150px 100px ;
    
+}
+.card{
+    margin: 30px 0 0 90px;
+    font-size: 30px;
+    font-weight: 300;
 }
 .select{
     margin: 50px 0 0 100px;
@@ -31,32 +36,18 @@
     /* border: 2px solid black; */
 }
 
-.input1{
-    height: 35px;
-    width: 300px;
-    border-radius: 15px;
-    margin: 20px 0 0 95px;
-    padding-left: 1rem;
-}
-.input2{
-    height: 35px;
-    width: 300px;
-    border-radius: 15px;
-    margin: 20px 0 0 140px;
-    padding-left: 1rem;
-}
+
 .col{
     display: grid;
     grid-template-columns: 300px 300px;
-    height: ;
 }
 .btn{
     display: grid;
     grid-template-columns: 100px 100px;
-    margin: 60px 0 0 95px;
+    margin: 0 0 0 95px;
 }
 @media (min-width: 600px) and (max-width: 800px){
-    .t{
+    .box1{
         background-color:  rgba(255, 255, 255, 1);
         display: grid;
         grid-template-rows: 40px 430px;
@@ -67,9 +58,9 @@
         border: 1px solid black;
     
     }
-    .box{
+    .box2{
         display: grid;
-        width: 370px;
+        width: 470px;
         margin: 0 25px 0 5px;
         font-size: 18px;
         font-weight: 400;

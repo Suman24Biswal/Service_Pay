@@ -1,4 +1,4 @@
-.box1{
+.t{
     background-color:  rgba(255, 255, 255, 1);
     display: grid;
     grid-template-rows: 100px 530px;
@@ -9,7 +9,7 @@
     border: 1px solid black;
 
 }
-.box2{
+.box{
     display: grid;
     width: 1020px;
     margin: 0 25px 0 25px;
@@ -20,14 +20,8 @@
 }
 
 .select2{
-    margin: 50px 0 0 105px;
-    width: 300px;
-    border-radius: 15px;
-    /* border: 2px solid black; */
-}
-.select{
-    margin: 50px 0 0 85px;
-    width: 300px;
+    margin: 50px 0 0 95px;
+    width: 310px;
     border-radius: 15px;
     /* border: 2px solid black; */
 }
@@ -47,10 +41,10 @@
     margin: 60px 0 0 95px;
 }
 @media (min-width: 600px) and (max-width: 800px){
-    .box1{
+    .t{
         background-color:  rgba(255, 255, 255, 1);
         display: grid;
-        grid-template-rows: 20px 430px;
+        grid-template-rows: 40px 430px;
         width: 530px;
         height: 630px;
         font-family: "Manrope", sans-serif;
@@ -58,7 +52,7 @@
         border: 1px solid black;
     
     }
-    .box2{
+    .box{
         display: grid;
         width: 320px;
         margin: 0 0 0 5px;
@@ -75,24 +69,11 @@
     .btn{
         display: grid;
         grid-template-columns: 100px 100px;
-        margin: 100px 0 0 105px;
+        margin: 80px 0 0 95px;
     }
     .card{
         margin: 30px 0 0 90px;
-        font-size: 25px;
+        font-size: 24px;
         font-weight: 200;
-    }
-    .select{
-        margin: 50px 0 0 85px;
-        width: 300px;
-        height: 35px;
-        border-radius: 15px;
-        /* border: 2px solid black; */
-    }
-    .select2{
-        margin: 25px 0 0 85px;
-        width: 300px;
-        border-radius: 15px;
-        /* border: 2px solid black; */
     }
 }

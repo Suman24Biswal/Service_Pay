@@ -1,15 +1,19 @@
+import  { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import styles from './Pay.module.css'
 import Select, { ValueType } from 'react-select';
-import { useState } from 'react';
-
+import styles from './Pay.module.css';
 
 interface OptionType {
   value: string;
   label: string;
 }
 
-function PayMethod() {
+interface PayMethodProps {
+  title: string;
+}
+
+function PayMethod(props: PayMethodProps) {
+  const { title } = props;
 
   const [atm, setAtm] = useState<OptionType | null>(null);
   const optionsAtm: OptionType[] = [
@@ -29,24 +33,24 @@ function PayMethod() {
   };
 
   return (
-    <div className={styles.t}>
-      <div className={styles.box}>
+    <div className={styles.box1}>
+      <div className={styles.box2}>
         <div></div>
         <div className={styles.card}>
-          <div >Water Bill Payment</div>
-          <div style={{ fontSize: '13px',color:'rgba(160, 160, 160, 1)', fontWeight: '300', margin: '10px 0 0 10px' }}>transfer / Bill Payment / <span style={{color:'green'}}>Water</span></div>
+          <div>{title}</div>
+          <div style={{ fontSize: '13px', color: 'rgba(160, 160, 160, 1)', fontWeight: '300', margin: '10px 0 0 10px' }}>transfer / Bill Payment / <span style={{ color: 'green' }}>Water</span></div>
         </div>
         <div className={styles.col}>
-          
+          <input className={styles.select} type="text" />
           <Select
             className={styles.select2}
-              options={optionsAtm}
-              value={atm}
-              placeholder="Select" 
-              onChange={(value: ValueType<OptionType>) => setAtm(value as OptionType)} 
-              isSearchable
-            />
-         
+            options={optionsAtm}
+            value={atm}
+            placeholder="Select"
+            onChange={(value: ValueType<OptionType>) => setAtm(value as OptionType)}
+            isSearchable
+          />
+
         </div>
         <div className={styles.btn}>
           <button onClick={transfer} style={{ height: '35px', width: '120px', borderRadius: '15px' }}>Cancel</button>
@@ -58,3 +62,4 @@ function PayMethod() {
 }
 
 export default PayMethod;
+
